@@ -1,0 +1,23 @@
+organ: ORGAN-II
+name: vigiles-aeternae--theatrum-mundi
+tier: standard
+status: LOCAL
+description: >
+  The creative multiverse of the Vigiles Aeternae. Worldbuilding bible,
+  character designs, RPG system, generative art, sound design, and the
+  spatial room navigation system (H.E.R.E./T.H.E.R.E./E.V.E.R.Y.W.H.E.R.E.).
+produces:
+  - target: organvm-iii-ergon/vigiles-aeternae--mercatura-mythica
+    type: creative-assets
+  - target: organvm-v-logos/vigiles-aeternae--vox-custodes
+    type: narrative-content
+  - target: meta-organvm/vigiles-aeternae--agon-cosmogonicum
+    type: narrative-scenarios
+consumes:
+  - source: organvm-i-theoria/vigiles-aeternae--corpus-mythicum
+    type: research-material
+  - source: organvm-ii-poiesis/alchemical-synthesizer
+    type: synth-creature-framework
+subscriptions:
+  - event: regime.cycle.complete
+  - event: order.character.updated
