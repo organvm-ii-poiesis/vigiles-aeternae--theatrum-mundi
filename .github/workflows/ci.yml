@@ -16,3 +16,5 @@ jobs:
           if [ -f seed.yaml ]; then
             python3 -c "import yaml; yaml.safe_load(open('seed.yaml'))" && echo "seed.yaml valid"
           fi
+      - name: Run room structure tests
+        run: python3 -m unittest discover -s tests -v
